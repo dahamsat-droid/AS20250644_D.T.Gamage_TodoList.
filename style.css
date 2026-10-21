@@ -1,0 +1,164 @@
+/* Pink Theme */
+:root {
+    --pink-dark: #d63384;
+    --pink-main: #ec6fa8;
+    --pink-light: #fde4ef;
+    --pink-bg: #fff5f9;
+    --pink-text: #5a2a41;
+}
+
+/* Page Colour */
+body {
+    background-color: var(--pink-bg);
+    color: var(--pink-text);
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+/* Navbar */
+.bg-primary {
+    background: linear-gradient(90deg, #ec6fa8, #f8a5c8) !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Heading */
+h1 {
+    color: var(--pink-dark);
+    font-weight: 700;
+}
+
+.lead {
+    color: var(--pink-text);
+}
+
+/* Input */
+#taskInput {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--pink-light);
+    border-radius: 2rem 0 0 2rem;
+}
+
+#taskInput:focus {
+    border-color: var(--pink-main);
+    box-shadow: 0 0 0 0.2rem rgba(236, 111, 168, 0.25);
+}
+
+/* Error Message */
+#errorMessage {
+    color: #c2185b !important;
+}
+
+/* 6. Primary Buttons */
+.btn-primary {
+    --bs-btn-bg: var(--pink-main);
+    --bs-btn-border-color: var(--pink-main);
+    --bs-btn-hover-bg: var(--pink-dark);
+    --bs-btn-hover-border-color: var(--pink-dark);
+    --bs-btn-active-bg: var(--pink-dark);
+    --bs-btn-active-border-color: var(--pink-dark);
+    --bs-btn-focus-shadow-rgb: 236, 111, 168;
+}
+
+#addBtn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+/* Filter Buttons */
+.btn-outline-primary {
+    --bs-btn-color: var(--pink-dark);
+    --bs-btn-border-color: var(--pink-main);
+    --bs-btn-hover-bg: var(--pink-main);
+    --bs-btn-hover-border-color: var(--pink-main);
+    --bs-btn-active-bg: var(--pink-dark);
+    --bs-btn-active-border-color: var(--pink-dark);
+    --bs-btn-focus-shadow-rgb: 236, 111, 168;
+}
+
+/* Clear Completed Button*/
+.btn-danger {
+    --bs-btn-bg: #c2185b;
+    --bs-btn-border-color: #c2185b;
+    --bs-btn-hover-bg: #a3134b;
+    --bs-btn-hover-border-color: #a3134b;
+    --bs-btn-active-bg: #a3134b;
+    --bs-btn-active-border-color: #a3134b;
+}
+
+/* Delete Button */
+.btn-outline-danger {
+    --bs-btn-color: #c2185b;
+    --bs-btn-border-color: #c2185b;
+    --bs-btn-hover-bg: #c2185b;
+    --bs-btn-hover-border-color: #c2185b;
+    --bs-btn-active-bg: #a3134b;
+    --bs-btn-active-border-color: #a3134b;
+    --bs-btn-focus-shadow-rgb: 194, 24, 91;
+}
+
+/* Task list */
+#taskList {
+    box-shadow: 0 4px 12px rgba(214, 51, 132, 0.15);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#taskList .list-group-item {
+    padding: 0.9rem 1rem;
+    border-color: var(--pink-light);
+    transition: background-color 0.2s;
+}
+
+#taskList .list-group-item:hover {
+    background-color: var(--pink-light);
+}
+
+/* Completed tasks */
+.completed {
+    text-decoration: line-through;
+    color: #c9a0b4;
+}
+
+/* Counter */
+#taskCounter {
+    font-weight: 500;
+    color: var(--pink-dark) !important;
+}
+
+/* Checkbox */
+.form-check-input:checked {
+    background-color: var(--pink-main);
+    border-color: var(--pink-main);
+}
+
+.form-check-input:focus {
+    border-color: var(--pink-main);
+    box-shadow: 0 0 0 0.2rem rgba(236, 111, 168, 0.25);
+}
+
+/* Buttons Effect. */
+.btn {
+    transition: transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn-group {
+        width: 100%;
+    }
+
+    #clearBtn {
+        width: 100%;
+    }
+}
